@@ -10,24 +10,24 @@ public class Weather {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(name = "first_name", nullable = false)
-	private String firstName;
+	@Column(name = "city", nullable = false)
+	private String city;
 	
-	@Column(name = "last_name")
-	private String lastName;
+	@Column(name = "temperature")
+	private String temperature;
 	
-	@Column(name = "email")
-	private String email;
+	@Column(name = "humidity")
+	private String humidity;
 	
 	public Weather() {
 		
 	}
 	
-	public Weather(String firstName, String lastName, String email) {
+	public Weather(String city, String temperature, String humidity) {
 		super();
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.email = email;
+		this.city = city;
+		this.temperature = temperature;
+		this.humidity = humidity;
 	}
 	public Long getId() {
 		return id;
@@ -35,22 +35,22 @@ public class Weather {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getFirstName() {
-		return firstName;
+	public String getCity() {
+		return city;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setCity(String city) {
+		this.city = city;
 	}
-	public String getLastName() {
-		return lastName;
+	public String getTemperature() {
+		return temperature;
 	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setTemperature(String temperature) {
+		this.temperature = temperature;
 	}
-	public String getEmail() {
-		return email;
+	public String getHumidity() {
+		return humidity;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setHumidity(String humidity) {
+		this.humidity = humidity;
 	}
 }

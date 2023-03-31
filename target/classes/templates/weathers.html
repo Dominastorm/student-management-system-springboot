@@ -35,16 +35,16 @@
 				<tr>
 					<th> Weather First Name</th>
 					<th> Weather Last Name</th>
-					<th> Weather Email </th>
+					<th> Weather Humidity </th>
 					<th> Actions </th>
 				</tr>
 			</thead>
 			
 			<tbody>
 				<tr th:each = "weather: ${weathers}">
-					<td th:text = "${weather.firstName}"></td>
-					<td th:text = "${weather.lastName}"></td>
-					<td th:text = "${weather.email}"></td>
+					<td th:text = "${weather.city}"></td>
+					<td th:text = "${weather.temperature}"></td>
+					<td th:text = "${weather.humidity}"></td>
 					<td>
 						<a th:href = "@{/weathers/edit/{id}(id=${weather.id})}"
 						 class = "btn btn-primary">Update</a>

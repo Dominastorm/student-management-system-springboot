@@ -57,9 +57,9 @@ public class WeatherController {
 		// get weather from database by id
 		Weather existingWeather = weatherService.getWeatherById(id);
 		existingWeather.setId(id);
-		existingWeather.setFirstName(weather.getFirstName());
-		existingWeather.setLastName(weather.getLastName());
-		existingWeather.setEmail(weather.getEmail());
+		existingWeather.setCity(weather.getCity());
+		existingWeather.setTemperature(weather.getTemperature());
+		existingWeather.setHumidity(weather.getHumidity());
 		
 		// save updated weather object
 		weatherService.updateWeather(existingWeather);
