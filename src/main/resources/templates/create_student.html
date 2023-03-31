@@ -36,35 +36,35 @@
 				<div class = "card-body">
 					<form th:action="@{/weathers}" th:object = "${weather}" method="POST">
 						<div class ="form-group">
-							<label> Weather First Name </label>
+							<label> City </label>
 							<input
 							type = "text"
 							name = "city"
 							th:field = "*{city}"
 							class = "form-control"
-							placeholder="Enter Weather First Name" 
+							placeholder="Enter City" 
 							/>
 						</div>
 						
 						<div class ="form-group">
-							<label> Weather Last Name </label>
+							<label> Temperature </label>
 							<input
 							type = "text"
 							name = "temperature"
 							th:field = "*{temperature}"
 							class = "form-control"
-							placeholder="Enter Weather Last Name" 
+							placeholder="Enter Temperature" 
 							/>
 						</div>
 						
 						<div class ="form-group">
-							<label> Weather Humidity </label>
+							<label> Humidity </label>
 							<input
 							type = "text"
 							name = "humidity"
 							th:field = "*{humidity}"
 							class = "form-control"
-							placeholder="Enter Weather Humidity" 
+							placeholder="Enter Humidity" 
 							/>
 						</div>
 						
