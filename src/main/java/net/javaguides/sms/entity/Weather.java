@@ -14,16 +14,16 @@ public class Weather {
 	private String city;
 	
 	@Column(name = "temperature")
-	private String temperature;
+	private int temperature;
 	
 	@Column(name = "humidity")
-	private String humidity;
+	private int humidity;
 	
 	public Weather() {
 		
 	}
 	
-	public Weather(String city, String temperature, String humidity) {
+	public Weather(String city, int temperature, int humidity) {
 		super();
 		this.city = city;
 		this.temperature = temperature;
@@ -41,16 +41,16 @@ public class Weather {
 	public void setCity(String city) {
 		this.city = city;
 	}
-	public String getTemperature() {
+	public int getTemperature() {
 		return temperature;
 	}
-	public void setTemperature(String temperature) {
+	public void setTemperature(int temperature) {
 		this.temperature = temperature;
 	}
-	public String getHumidity() {
+	public int getHumidity() {
 		return humidity;
 	}
-	public void setHumidity(String humidity) {
+	public void setHumidity(int humidity) {
 		this.humidity = humidity;
 	}
 }
